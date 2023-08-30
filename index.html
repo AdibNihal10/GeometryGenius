@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-between mt-5 p-16">
+            <div>
+                <h1 class="text-4xl font-bold font-sans">Interactive <br><span
+                        class="font-medium text-xl text-slate-500">Geometry Genius</span></h1>
+
+            </div>
+            <div>
+                <button id="blogid" class="bg-blue-700 text-white w-20 h-8 rounded">Blog
+
+                </button>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="flex flex-col lg:flex-row gap-2">
+            <div class="grid grid-cols-3 gap-4 p-3">
+                <div class="text-center hover:bg-purple-400">
+                    <img src="images/triangle.png" alt="" class='mx-auto mt-10 mb-7'>
+                    <p class="font-bold text-2xl mb-2 font-sans"><span id="triangle">Triangle</span></p>
+                    <p class="mb-6">Area(A) = 0.5xbxh</p>
+                    <input type="text" name="" id="bvalue" class="w-20 h-5 placeholder:text-black p-3" placeholder="b">
+                    <span class="ml-1">cm</span>
+                    <input type="text" name="" id="hvalue" class="w-20 h-5 placeholder:text-black p-3"
+                        placeholder="h"><span class="ml-1">cm</span>
+                    <br>
+
+                    <button
+                        class="mt-14 bg-blue-700 text-white w-52 h-10 font-bold font-bold text-neutral-100 rounded mb-10"
+                        id="areaT">Calculate</button>
+
+                </div>
+                <div class="text-center">
+                    <img src="images/rectangle.png" alt="" class='mx-auto mt-10 mb-7'>
+                    <p class="font-bold text-2xl mb-2 font-sans">Reactangle</p>
+                    <p class="mb-6">Area(A) = w x l</p>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="w">
+                    <span class="ml-1">cm</span>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="l"><span
+                        class="ml-1">cm</span>
+                    <br>
+
+                    <button
+                        class="mt-14 bg-blue-700 text-white w-52 h-10 font-bold font-bold text-neutral-100 rounded">Calculate</button>
+
+                </div>
+                <div class="text-center">
+                    <img src="images/parallelogram.png" alt="" class='mx-auto mt-10 mb-7'>
+                    <p class="font-bold text-2xl mb-2 font-sans">Parallelogram</p>
+                    <p class="mb-6">Area(A) = b x h</p>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="b">
+                    <span class="ml-1">cm</span>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="h"><span
+                        class="ml-1">cm</span>
+                    <br>
+
+                    <button
+                        class="mt-14 bg-blue-700 text-white w-52 h-10 font-bold font-bold text-neutral-100 rounded">Calculate</button>
+
+                </div>
+                <div class="text-center hover:bg-blue-400">
+                    <img src="images/rhombus.png" alt="" class='mx-auto mt-10 mb-7'>
+                    <p class="font-bold text-2xl mb-2 font-sans">Rhombus</p>
+                    <p class="mb-6">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="d1">
+                    <span class="ml-1">cm</span>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="d1"><span
+                        class="ml-1">cm</span>
+                    <br>
+
+                    <button
+                        class="mt-14 bg-blue-700 text-white w-52 h-10 font-bold font-bold text-neutral-100 rounded mb-5">Calculate</button>
+
+                </div>
+                <div class="text-center">
+                    <img src="images/pentagon.png" alt="" class='mx-auto mt-10 mb-7'>
+                    <p class="font-bold text-2xl mb-2 font-sans">Pentagon</p>
+                    <p class="mb-6">Area(A) = 0.5 x p x b</p>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="p">
+                    <span class="ml-1">cm</span>
+                    <input type="text" name="" id="" class="w-20 h-5 placeholder:text-black p-3" placeholder="b"><span
+                        class="ml-1">cm</span>
+                    <br>
+
+                    <button
+                        class="mt-14 bg-blue-700 text-white w-52 h-10 font-bold font-bold text-neutral-100 rounded">Calculate</button>
+
+                </div>
+                <div class="text-center">
+                    <img src="images/ellipse.png" alt="" class='mx-auto mt-10 mb-7'>
+                    <p class="font-bold text-2xl mb-2 font-sans" id="Ellipsename">Ellipse</p>
+                    <p class="mb-6">Area(A) = Piab</p>
+
+                    <br>
+                    <p>a = <span id="avalue">10</span>cm, b = <span id="rhvalue">4</span>cm </p>
+
+                    <button id="ellipse"
+                        class="mt-14 bg-blue-700 text-white w-52 h-10 font-bold text-neutral-100 rounded">Calculate</button>
+
+                </div>
+
+
+            </div>
+            <div class="w-[400px] text-center">
+                <div>
+                    <p class="font-bold" id="Calculation"><u>Area Calculation</u></p>
+                </div>
+                <div id="Entry" class="font-normal my-2 p-2">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
